@@ -17,6 +17,10 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
+      playfair: ['Playfair Display', 'serif'],
+    },
 		extend: {
 			colors: {
 				border: 'hsl(var(--border))',
@@ -52,6 +56,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+        bird: {
+          skyblue: '#33C3F0',
+          softblue: '#D3E4FD',
+          softgreen: '#F2FCE2',
+          softpeach: '#FDE1D3',
+          softgray: '#F1F0FB',
+          neutral: '#8E9196',
+          light: '#F1F1F1'
+        },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
