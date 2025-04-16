@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Camera, Eye, MapPin } from "lucide-react";
+import { Camera, Eye, MapPin, User } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -14,9 +14,19 @@ interface PhotoCardProps {
   location: string;
   date: string;
   className?: string;
+  photographer?: string;
 }
 
-export function PhotoCard({ id, image, title, species, location, date, className }: PhotoCardProps) {
+export function PhotoCard({ 
+  id, 
+  image, 
+  title, 
+  species, 
+  location, 
+  date, 
+  className,
+  photographer = "Anil Rudramuni Hiremath" 
+}: PhotoCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   
   return (
@@ -32,6 +42,9 @@ export function PhotoCard({ id, image, title, species, location, date, className
             alt={title} 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
+          <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-md backdrop-blur-sm">
+            © {photographer}
+          </div>
         </AspectRatio>
         
         <div className={cn(
@@ -74,6 +87,10 @@ export function PhotoCard({ id, image, title, species, location, date, className
           <div className="flex items-center">
             <Camera className="h-3 w-3 mr-1" />
             {date}
+          </div>
+          <div className="flex items-center">
+            <User className="h-3 w-3 mr-1" />
+            {photographer}
           </div>
         </div>
       </div>

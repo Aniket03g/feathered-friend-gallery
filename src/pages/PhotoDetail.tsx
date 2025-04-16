@@ -1,6 +1,6 @@
 
 import { useParams, Link } from "react-router-dom";
-import { ChevronLeft, Calendar, MapPin, Camera } from "lucide-react";
+import { ChevronLeft, Calendar, MapPin, Camera, User } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,7 @@ import { photos } from "@/data/photos";
 const PhotoDetail = () => {
   const { id } = useParams<{ id: string }>();
   const photo = photos.find(p => p.id === id);
+  const photographer = "Anil Rudramuni Hiremath";
   
   if (!photo) {
     return (
@@ -48,12 +49,15 @@ const PhotoDetail = () => {
           
           <div className="grid lg:grid-cols-5 gap-12">
             <div className="lg:col-span-3">
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg relative">
                 <img 
                   src={photo.image} 
                   alt={photo.title} 
                   className="w-full h-auto"
                 />
+                <div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1.5 rounded-md backdrop-blur-sm text-sm">
+                  © {photographer}
+                </div>
               </div>
             </div>
             
@@ -76,6 +80,11 @@ const PhotoDetail = () => {
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Camera className="h-4 w-4" />
                     {photo.category}
+                  </div>
+                  
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <User className="h-4 w-4" />
+                    {photographer}
                   </div>
                 </div>
                 
