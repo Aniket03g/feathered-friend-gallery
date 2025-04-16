@@ -4,92 +4,62 @@ import { Photo } from "@/components/gallery/GalleryGrid";
 export const photos: Photo[] = [
   {
     id: "1",
-    image: "https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Hummingbird in Flight",
-    species: "Ruby-throated Hummingbird",
-    category: "songbirds",
-    location: "Backyard Garden",
-    date: "June 15, 2023",
-    description: "A magnificent ruby-throated hummingbird hovering mid-air while feeding on nectar from a flower. The iridescent feathers catch the morning light perfectly."
+    image: "/lovable-uploads/1e6bfbbb-13e5-4bec-a6cb-27dffa2e3ecf.png",
+    title: "Phen",
+    species: "Indian Peafowl",
+    category: "ground-birds",
+    location: "Pune Outskirts",
+    date: "March 15, 2024",
+    description: "The Indian Peafowl (locally known as Phen) spotted in its natural habitat among dried grasses. These magnificent birds are known for their distinctive plumage and are often found in rural areas around Pune."
   },
   {
     id: "2",
-    image: "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Snowy Owl Gaze",
-    species: "Snowy Owl",
-    category: "raptors",
-    location: "Northern Fields",
-    date: "January 12, 2023",
-    description: "A majestic snowy owl perched on a fence post during winter. These rare visitors from the arctic are a special sight in our area."
+    image: "/lovable-uploads/fc33811a-a6cd-4085-b861-e762a9199c2a.png",
+    title: "White-throated Kingfisher",
+    species: "Halcyon smyrnensis",
+    category: "kingfishers",
+    location: "Urban Pune",
+    date: "February 20, 2024",
+    description: "A White-throated Kingfisher perched on a building ledge. Despite urban development, these birds have adapted well to city life and can be spotted near water bodies around Pune."
   },
   {
     id: "3",
-    image: "https://images.unsplash.com/photo-1591608971358-f93643d31f43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Blue Jay Majesty",
-    species: "Blue Jay",
+    image: "/lovable-uploads/c3770eac-eefe-41df-95e2-3ce994383842.png",
+    title: "Female Koel",
+    species: "Eudynamys scolopaceus",
     category: "songbirds",
-    location: "Oak Forest Trail",
-    date: "March 25, 2023",
-    description: "A vibrant blue jay perched on a branch, displaying its stunning blue, white, and black plumage. These intelligent birds are known for their bold personalities."
+    location: "Garden Area, Pune",
+    date: "April 8, 2024",
+    description: "The Female Asian Koel with its distinctive speckled plumage and white spots. Much more discreet than its male counterpart, the female koel is often heard before it's seen in the gardens of Pune."
   },
   {
     id: "4",
-    image: "https://images.unsplash.com/photo-1555118367-93f01e18860f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Mallard Reflection",
-    species: "Mallard Duck",
-    category: "waterfowl",
-    location: "Mill Pond",
-    date: "April 8, 2023",
-    description: "A male mallard creating perfect ripples across the still water of the pond at sunset. The golden hour light enhances the beautiful green hues on its head."
+    image: "/lovable-uploads/a41b041e-5d56-4075-b84b-a132727c5e98.png",
+    title: "White-feathered Robin",
+    species: "Oriental Magpie-Robin",
+    category: "songbirds",
+    location: "Rocky Terrain, Pune",
+    date: "March 30, 2024",
+    description: "A white-feathered Oriental Magpie-Robin spotted on rocky terrain. These birds are known for their melodious songs and distinctive black and white plumage."
   },
   {
     id: "5",
-    image: "https://images.unsplash.com/photo-1520808663317-647b476a81b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Morning Songster",
-    species: "American Robin",
-    category: "songbirds",
-    location: "Cherry Park",
-    date: "May 2, 2023",
-    description: "An American robin singing its heart out in the early morning. The dawn chorus is one of nature's most beautiful symphonies."
+    image: "/lovable-uploads/91049bbe-08cd-4550-9c66-3de4fcdb186b.png",
+    title: "Blue Kingfisher",
+    species: "Common Kingfisher",
+    category: "kingfishers",
+    location: "Rural Pune",
+    date: "January 25, 2024",
+    description: "The Common Kingfisher (also known as Blue Kingfisher) perched on a branch against a clear blue sky. These small yet vibrant birds can be spotted near water bodies throughout the Pune region."
   },
   {
     id: "6",
-    image: "https://images.unsplash.com/photo-1589595363745-d842812a9db7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Soaring Freedom",
-    species: "Bald Eagle",
-    category: "raptors",
-    location: "Lakeside Cliffs",
-    date: "July 4, 2023",
-    description: "A bald eagle soaring against a clear blue sky. Capturing the majesty of our national bird in flight is always a thrilling experience."
-  },
-  {
-    id: "7",
-    image: "https://images.unsplash.com/photo-1619354691668-fbbc1e3b2bba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Red Crest",
-    species: "Pileated Woodpecker",
-    category: "other",
-    location: "Ancient Forest",
-    date: "September 12, 2023",
-    description: "A pileated woodpecker with its striking red crest working on a dead tree. These impressive birds are vital for forest ecology."
-  },
-  {
-    id: "8",
-    image: "https://images.unsplash.com/photo-1522926193341-e9ffd686c60f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Great Blue Patience",
-    species: "Great Blue Heron",
-    category: "waterfowl",
-    location: "Marsh Wetlands",
-    date: "August 18, 2023",
-    description: "A great blue heron standing perfectly still while hunting in the shallows. Their patience and precision are remarkable to observe."
-  },
-  {
-    id: "9",
-    image: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    title: "Sunshine Wings",
-    species: "American Goldfinch",
+    image: "/lovable-uploads/a7791605-f2bc-4808-bfcd-f05dfecabc43.png",
+    title: "Common Myna",
+    species: "Acridotheres tristis",
     category: "songbirds",
-    location: "Meadow Flowers",
-    date: "July 20, 2023",
-    description: "A bright yellow American goldfinch perched on a purple coneflower. The contrast between the vivid yellow bird and the purple flower is visually stunning."
+    location: "Open Woodland, Pune",
+    date: "April 2, 2024",
+    description: "The Indian Common Myna perched on a tree branch. These highly adaptable birds are found throughout Pune and are known for their intelligence and vocal abilities."
   }
 ];

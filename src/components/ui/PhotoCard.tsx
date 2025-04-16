@@ -25,7 +25,7 @@ export function PhotoCard({ id, image, title, species, location, date, className
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden rounded-lg">
         <AspectRatio ratio={3/2}>
           <img 
             src={image} 
