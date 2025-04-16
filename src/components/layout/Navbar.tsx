@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Bird, Camera, Menu, X } from "lucide-react";
@@ -12,7 +11,7 @@ export function Navbar() {
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           <Bird className="h-8 w-8 text-bird-skyblue" />
-          <span className="heading-font text-xl font-semibold">Feathered Frames</span>
+          <span className="heading-font text-xl font-semibold">Bird Club of Pune</span>
         </Link>
         
         {/* Desktop Navigation */}

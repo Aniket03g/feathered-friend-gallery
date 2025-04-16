@@ -1,4 +1,3 @@
-
 import { Bird, Heart, Instagram, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,7 @@ export function Footer() {
           <div className="max-w-md">
             <div className="flex items-center gap-2 mb-4">
               <Bird className="h-8 w-8 text-bird-skyblue" />
-              <span className="heading-font text-xl font-semibold">Feathered Frames</span>
+              <span className="heading-font text-xl font-semibold">Bird Club of Pune</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Capturing the beauty and diversity of local avian wildlife through the lens of passion and patience.
@@ -86,7 +85,7 @@ export function Footer() {
         
         <div className="pt-8 border-t border-bird-softblue/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Feathered Frames. All rights reserved.
+            © {currentYear} Bird Club of Pune. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
             Made with <Heart size={14} className="text-red-400" /> for our feathered friends
